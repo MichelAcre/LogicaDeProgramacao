@@ -22,7 +22,7 @@ console.log(
 );
 console.log(
   nome,
-  "trabalhou como professor na escala 7x0 por um ano, novo saldo é:",
+  "trabalhou como professor na escala 8x0 por um ano, novo saldo é:",
   (sconta = sconta + 2000)
 );
 console.log(

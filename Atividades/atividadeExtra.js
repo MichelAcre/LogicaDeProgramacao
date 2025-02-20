@@ -98,7 +98,9 @@ console.log(
   "a soma de todos os números da tabela é:",
   nisaurus[0] + nisaurus[1] + nisaurus[2] + nisaurus[3] + nisaurus[4]
 );
-
+console.log(
+  "-----------------------------------------------------------------"
+);
 //ordenação de números
 let numeros = [4, 2, 9, 1, 5];
 console.log("numeros fornecidos pelo usuário:", numeros);

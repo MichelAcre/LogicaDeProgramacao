@@ -1,0 +1,11 @@
+var frutas = ["banana", "maça", "pera", "uva", "morango"];
+frutas.push("tangerina");
+console.table(frutas);
+frutas.unshift("goiaba");
+console.log(frutas[5]);
+var elementoexcluir = "uva";
+var posicao = frutas.indexOf(elementoexcluir);
+frutas.splice(posicao, 1);
+console.table(frutas);
+var copia = frutas.slice(2, 5);
+console.table(copia);

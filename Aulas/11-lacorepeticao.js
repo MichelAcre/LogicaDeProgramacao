@@ -61,3 +61,5 @@ for (let i = 0; i < matriz.length; i++) {
 console.log(
   `o usuário mandou a palavra ${variavel1}, e logo após a palavra ${variavel2}`
 );
+
+// laço repetição - while / do while

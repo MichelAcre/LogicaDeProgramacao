@@ -105,3 +105,91 @@ console.log(
 let numeros = [4, 2, 9, 1, 5];
 console.log("numeros fornecidos pelo usuário:", numeros);
 console.log("numeros em ordem:", numeros.sort());
+
+/* Estourando o cartão - versão While
+1. Crie uma variável e atribua o nome de uma pessoa;
+2. Crie uma variavel e atribua o nome de um banco;
+3. Cria uma variavel e atribua o número da agência;
+4. Crie uma variável e atribua o número da conta;
+5. Crie uma variável e atribua o saldo da conta;
+6. Exiba ao usuário os dados e o saldo da conta;
+7.Efetue e exiba ao usuário 5 movimentações na conta utilizando o laço while com valores aleatórios;
+8.Exiba ao usuário novamente os dados e o saldo da conta;
+*/
+// var nome = prompt("informe seu nome!");
+// var banco = prompt("informe seu banco!");
+// var agencia = prompt("informe o número da sua agência!");
+// var conta = prompt("informe o número da sua conta!");
+// var saldo = prompt("informe o saldo de sua conta!");
+// console.log(
+//   `Nome: ${nome}, Banco: ${banco}, Nº da agência: ${agencia}, Nº da conta ${conta}, Saldo: ${saldo}R$`
+// );
+// var contador = 1;
+// while (contador <= 5) {
+//   let gasto = Math.random() * 100;
+//   saldo -= gasto.toFixed(2);
+//   contador++;
+// }
+// console.log(
+//   `Nome: ${nome}, Banco: ${banco}, Nº da agência: ${agencia}, Nº da conta ${conta}, Saldo: ${saldo.toFixed(
+//     2
+//   )}R$`
+// );
+
+// while (saldo > 0) {
+//   let escolher = prompt("escolha se quer retirar ou depositar?")
+//   if (escolher = "retirar") {
+//    let retirada = prompt("Quanto você quer retirar?")
+//    saldo -= retirada
+//    console.log(`Seu novo saldo é: ${saldo}`)
+//   } else if (escolher = "depositar") {
+//     let depositada = prompt("Quanto você quer depositar?")
+//     saldo += depositada
+//    console.log(`Seu novo saldo é: ${saldo}`)
+//   }
+// }
+
+//Jogo de cara e coroa - melhor de três rodadas - aleatório - DO WHILE
+console.log(
+  "----------------------------------Cara ou Coroa------------------------------------------"
+);
+var contador = 1;
+var vitoria = 0;
+var derrota = 0;
+do {
+  let moeda = Math.random() * 2;
+  if (moeda > 1) {
+    console.log("É cara!");
+    vitoria++;
+  } else {
+    console.log("É coroa!");
+    derrota++;
+  }
+  contador++;
+} while (contador <= 3);
+
+console.log("------------------------------------");
+console.log("             PLACAR                 ");
+console.log("------------------------------------");
+console.log(`Nº de vitórias: ${vitoria}`);
+console.log(`Nº de derrotas: ${derrota}`);
+console.log("------------------------------------");
+
+/*******************************************************************
+                      Lista de exercícios MASTER 
+ *******************************************************************
+ Supondo que a população de um país A seja de a habitantes com uma taxa anual de crescimento de 3% e que a população de um país B seja
+ de b habitantes, com uma taxa anual de crescimento de 1,5%, fazer um algoritmo que calcule e escreva o número de anos necessarios para
+ que a população do país A ultrapasse ou iguale a população do país B, mantidas essas taxas de crescimento
+ */
+var a = 800000;
+var b = 950000;
+var anos = 0;
+
+do {
+  a += (a * 0.03)
+  b += (b * 0.015)
+  anos++
+  console.log(`Passaram-se ${anos} anos!, a população do país A é ${a.toFixed(0)}, e a população do país B é ${b.toFixed(0)}!`)
+} while (a < b)
+console.log(`São necessários ${anos} anos para que os dois países obtenham uma população maior ou igual!`)
